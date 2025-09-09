@@ -6,10 +6,32 @@
     <title>Document</title>
 </head>
 <body>
-    
-    <script src="handler.js">
-        
-    </script>
+
+    <div id="person"></div>
+
+    <div id="student"></div>
+
+    <div id="teacher"></div>
 
 </body>
+
+<script src="handler.js" type="module"></script>
+
+    Person.forEach((person) =>{
+    console.log(person.name);
+
+});
+
+Student.forEach((student) => {
+    console.log(student.marks);
+
+});
+
+Teacher.forEach((students) => {
+    console.log(students.students);
+
+});
+
+</script>
+
 </html>

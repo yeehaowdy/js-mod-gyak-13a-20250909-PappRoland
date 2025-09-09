@@ -1,7 +1,7 @@
 //handler
-import Person from "./person";
-import Student from "./student";
-import Teacher from "./teacher";
+import Person from "./person.js";
+import Student from "./student.js";
+import Teacher from "./teacher.js";
 
 
 
@@ -28,3 +28,12 @@ console.log(student.marks);
 
 let teacher = new Teacher(['John Tanuló', 'János Student']);
 console.log(teacher.students);
+
+const personOut = document.getElementById('person');
+personOut.innerHTML = `<p>${person.name}</p>`;
+
+const studentOut = document.getElementById('student');
+studentOut.innerHTML = student.marks.map(mark => `<p>${mark}</p>`).join('');
+
+const teacherOut = document.getElementById('teacher');
+teacherOut.innerHTML =  teacher.students.map(student => `<p>${student}</p>`).join('');
