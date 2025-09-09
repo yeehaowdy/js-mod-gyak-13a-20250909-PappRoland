@@ -11,11 +11,11 @@ export default class Person{
 
     }
 
-    set name(name){
-        this._name = name;
+    set name(value){
+        this._name = value;
 
     }
 }
-//test
-let person = new Person('john guy');
-console.log(person.name);
+//test task 2
+//let person = new Person('john guy');
+//console.log(person.name);

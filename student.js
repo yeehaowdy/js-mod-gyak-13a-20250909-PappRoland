@@ -7,7 +7,7 @@ export default class Student extends Person{
     constructor(marks){
         super();
         var addMarks = [5,4,5];
-        this._marks = [...addMarks, ...marks]
+        this._marks = [...addMarks, ...marks];
 
     }
       get marks(){
@@ -15,12 +15,12 @@ export default class Student extends Person{
 
     }
 
-    set marks(marks){
-        this._marks = marks;
+    set marks(value){
+        this._marks = value;
 
     }
 }
 
 //test task 4
-let student = new Student([]);
-console.log(student);
+//let student = new Student([]);
+//console.log(student);
