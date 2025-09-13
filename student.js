@@ -1,5 +1,5 @@
 //student
-import Person from "./person";
+import {default as Person} from "./person.js";
 
 export default class Student extends Person{
     _marks = [];

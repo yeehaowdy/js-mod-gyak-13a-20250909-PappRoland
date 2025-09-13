@@ -1,4 +1,6 @@
 //teacher
+import {default as Person} from "./person.js";
+
 export default class Teacher extends Person{
     _students = [];
 
